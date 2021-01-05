@@ -78,9 +78,10 @@ body {
 
 .logo {
   margin: 10px;
-  width: 3vw;
-  height: 3vh;
-  background-color: #066094;
+  width: 30px;
+  height: 2vh;
+  border-radius: 5% 30% ;
+  border: 7px solid #066094;
 }
 
 .container {
@@ -115,7 +116,26 @@ body {
 
   transition: 0.75s;
 }
-
+.logo {
+  position: relative;
+}
+.logo::after,
+.logo::before {
+  background-color: #259bc1;
+  content: "";
+  display: block;
+  height: 7px;
+  position: absolute;
+  width: 7px;
+}
+.logo::after {
+  bottom: -7px;
+  right: -7px;
+}
+.logo::before {
+  top: -7px;
+  left: -7px;
+}
 .searchInput {
   width: 15vw;
   height: 3vh;
@@ -125,7 +145,12 @@ body {
   font-weight: 400;
   border: 2px solid #d9d9db;
   color: #d9d9db;
-  text-align: center;
+  outline: none;
+  padding-left: 3vw;
+}
+
+.searchInput::placeholder {
+  color: #c1c1ca;
 }
 
 .searchIcon {
@@ -159,8 +184,9 @@ body {
 }
 
 th {
-  color: #e0dbdb;
-  font-family: "Dosis", sans-serif;
+  color: #c1c1ca;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.85rem;
   text-align: left !important;
 }
 
@@ -203,4 +229,34 @@ th {
 
 .width200 {
   width: 200px;
+}
+
+#button-holder img {
+  position: absolute;
+  height: 100%;
+  color: #d9d9db;
+  height: 3.5vh;
+  top: 11.4vh;
+  left: 10.4vw;
+}
+
+@media only screen and (max-width: 1000px) {
+  .searchInput {
+    padding-left: 4.5vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .logo{
+    width: 40px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .searchInput {
+    padding-left: 7vw;
+  }
+  .platformText{
+    font-size: 13px;
+  }
 }
