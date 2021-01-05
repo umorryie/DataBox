@@ -80,7 +80,7 @@ body {
   margin: 10px;
   width: 30px;
   height: 2vh;
-  border-radius: 5% 30% ;
+  border-radius: 5% 30%;
   border: 7px solid #066094;
 }
 
@@ -247,7 +247,7 @@ th {
 }
 
 @media only screen and (max-width: 600px) {
-  .logo{
+  .logo {
     width: 40px;
   }
 }
@@ -256,7 +256,7 @@ th {
   .searchInput {
     padding-left: 7vw;
   }
-  .platformText{
+  .platformText {
     font-size: 13px;
   }
 }
