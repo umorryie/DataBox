@@ -260,3 +260,34 @@ th {
     font-size: 13px;
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .navbar {
+    width: 90vw;
+  }
+  .filterUl{
+    margin: 0px;
+  }
+  
+  .platformText {
+    font-size: 13px;
+  }
+  li{
+    font-size: 14px;
+  }
+
+  ul{
+    margin: 0px;
+    padding-inline-start: 0px;
+  }
+
+  .logo {
+    width: 25px;
+  }
+  .platformText{
+    width: 10px;
+  }
+  th{
+    font-size: 12px;
+  }
+}
