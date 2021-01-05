@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/layout.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="navContainer">
+      <div class="navbar">
+        <div class="platformAdmin center">
+          <div class="logo"></div>
+          <div class="platformText">Platform admin</div>
+        </div>
+        <div class="fitlers">
+          <ul class="center">
+            <li class="filterUl hoverFilter liStyle">FILTER:</li>
+            <li class="filterUl hoverAll liStyle">All</li>
+            <li class="filterUl hoverFree liStyle">Free</li>
+            <li class="filterUl hoverPaying liStyle">Paying</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="searchContainer">
+      <div class="container center">
+        <div class="search">
+          <div class="searchIcon"></div>
+          <input
+            type="text"
+            class="searchInput"
+            id="searchBox"
+            placeholder="Search"
+          />
+        </div>
+        <div class="createNewAccount">
+          <button class="button">Create new Account</button>
+        </div>
+      </div>
+    </div>
+    <div class="tables center">
+      <div class="rowContainer">
+        <div class="table">
+          <div class="columnNames">
+            <table class="columnNamesTable">
+              <tr>
+                <th class="width50 thPaddingIDColumn">ID</th>
+                <th class="thPaddingColumns width200">Company Name</th>
+                <th class="thPaddingColumns width200">Owner email</th>
+              </tr>
+            </table>
+            <div class="line"></div>
+            <div id="renderingTable"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
